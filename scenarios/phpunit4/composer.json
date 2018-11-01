@@ -86,7 +86,7 @@
     "sort-packages": true,
     "process-timeout": 9600,
     "platform": {
-
+      "php": "5.6"
     },
     "vendor-dir": "../../vendor"
   },
@@ -112,7 +112,7 @@
     "unit": "phpunit --colors=always --configuration tests/unit",
     "functional": "phpunit --colors=always --configuration tests/functional",
     "post-update-cmd": [
-        "create-scenario phpunit4 --autoload-dir src/internal-fork 'phpunit/phpunit:^4.8.36'"
+        "create-scenario phpunit4 --autoload-dir src/internal-fork --platform-php 5.6 'phpunit/phpunit:^4.8.36'"
     ]
   },
   "extra": {
