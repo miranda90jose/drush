@@ -50,6 +50,7 @@ jobs:
       - checkout
       - run: $HOME/drush/.circleci/setup.sh
       - run: composer scenario phpunit4
+      - run: composer install
       - run: composer functional
 
 workflows:
