@@ -81,7 +81,7 @@
     "files": ["tests/load.environment.php"]
   },
   "config": {
-    "optimize-autoloader": true,
+    "optimize-autoloader": false,
     "preferred-install": "dist",
     "sort-packages": true,
     "process-timeout": 9600,
@@ -112,7 +112,7 @@
     "unit": "phpunit --colors=always --configuration tests/unit",
     "functional": "phpunit --colors=always --configuration tests/functional",
     "post-update-cmd": [
-        "create-scenario phpunit4 --autoload-dir internal-copy 'phpunit/phpunit:^4.8.36'"
+        "create-scenario phpunit4 --autoload-dir src/internal-fork 'phpunit/phpunit:^4.8.36'"
     ]
   },
   "extra": {
